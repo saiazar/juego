@@ -24,3 +24,38 @@ alert("Computadora escogió: "+ computadora + ".\n" +
 console.log("Computadora escogió: "+ computadora + ".\n" +
 	"El jugador escogió: " + jugador + ".\n" +
 	"Por lo tanto: " + resultado);
+
+// Comparaciones y resultados
+function comparar(jugador, computadora){
+if(jugador === computadora){
+	resultado = "¡Es un empate!";
+	return resultado;
+}
+if(jugador === "piedra"){
+	if(computadora === "tijeras"){
+		resultado = "¡Piedra gana!";
+		return resultado;
+	} else {
+		resultado = "¡Papel gana!";
+		return resultado;
+	}
+}
+if(jugador === "papel"){
+	if(computadora === "piedra"){
+		resultado = "¡Papel gana!";
+		return resultado;
+	} else {
+		resultado = "¡Tijeras gana!";
+		return resultado;
+	}
+}
+if(jugador === "tijeras"){
+	if(computadora === "papel"){
+		resultado = "¡Tijeras gana!";
+		return resultado;
+	} else {
+		resultado = "¡Piedra gana!";
+		return resultado;
+		}
+  	}
+} 
